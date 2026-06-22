@@ -35,6 +35,28 @@
     },
     {
       "term": "resting-state"
+    },
+    {
+      "term": "polysomnography"
+    },
+    {
+      "term": "sleep stages"
+    },
+    {
+      "term": "visual-motor adaptation"
+    },
+    {
+      "term": "arousal dynamics"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Magnetic Resonance Imaging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
     }
   ],
   "related_identifiers": [
@@ -52,6 +74,11 @@
       "identifier": "10.18112/openneuro.ds003768.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1101/2021.11.10.468148",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
