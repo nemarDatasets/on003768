@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on003768-blue)](https://doi.org/10.82901/nemar.on003768)
+
 
 This dataset included 33 healthy participants collected at Penn State with informed consent. Simultaneously collected EEG and BOLD signals for each participant were recorded and organized at each folder. EEG data were collected using a 32 channel MR-compatible EEG system (Brain Products, Munich, Germany). R128 in the EEG signals corresponds to the BOLD fMRI volume trigger.
 
