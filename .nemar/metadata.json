@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Simultaneous EEG and fMRI signals during sleep from humans",
+  "description": "This dataset comprises simultaneous EEG and fMRI recordings from 33 healthy human participants during sleep and wakefulness. The study includes resting-state sessions before and after a visual-motor adaptation task, followed by multiple sleep sessions with polysomnographic staging. The simultaneous acquisition of high-resolution BOLD imaging and 32-channel EEG enables investigation of the neural and autonomic correlates of sleep-wake transitions and arousal dynamics.",
+  "methods_description": "EEG data were collected using a 32-channel MR-compatible EEG system (Brain Products, Munich, Germany) simultaneously with fMRI acquisition. Each scanning session included an anatomical scan, two 10-minute resting-state sessions (before and after a visual-motor adaptation task), and multiple 15-minute sleep sessions. Sleep stages were scored for 30-second epochs across all sessions. The R128 marker in EEG signals corresponds to BOLD fMRI volume triggers for synchronization.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,12 +15,29 @@
     "Jeff H. Duyn": {},
     "Xiao Liu": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003768.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "fMRI"
+    },
+    {
+      "term": "Sleep",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
+    },
+    {
+      "term": "simultaneous recording"
+    },
+    {
+      "term": "arousal"
+    },
+    {
+      "term": "resting-state"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003768",
       "identifier_type": "URL",
@@ -28,6 +47,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003768",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003768.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -47,14 +71,14 @@
       "award_title": "R01 Award"
     }
   ],
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "eeg",
     "func"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "92.8 GB (1054 files)"
   ],
   "formats": [
     ".eeg",
@@ -64,45 +88,8 @@
     ".md",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This dataset comprises simultaneous EEG and fMRI recordings from 33 healthy human participants during sleep and wakefulness, collected at Pennsylvania State University. The study includes resting-state sessions before and after a visual-motor adaptation task, followed by multiple sleep sessions with polysomnographic staging. The synchronized acquisition of high-density EEG (32 channels) and BOLD fMRI signals enables investigation of the neural correlates of sleep-wake transitions and autonomic-neural interactions during sleep.",
-  "methods_description": "EEG data were collected using a 32-channel MR-compatible EEG system (Brain Products, Munich, Germany) synchronized with BOLD fMRI acquisition. Each scanning session included an anatomical scan, two 10-minute resting-state sessions (before and after a visual-motor adaptation task), and multiple 15-minute sleep sessions. Sleep stages were scored for 30-second epochs across all sessions.",
-  "keywords": [
-    {
-      "term": "EEG",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "fMRI",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "Sleep",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
-    },
-    {
-      "term": "simultaneous EEG-fMRI",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "arousal",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "resting state",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "polysomnography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
-    },
-    {
-      "term": "sleep staging",
-      "subject_scheme": "MeSH"
-    }
-  ],
-  "source_hash": "d2a56848b0239fce7e732e7c3d9c2c9fc3880d9dc9af459ddc330508d472203d"
+  "source_hash": "5aaf5a9bc35e297c2a14648fd0103c4c9a127aa3748543af0f29a0dadad9f6c0"
 }
