@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on003768",
-  "source": "openneuro",
-  "source_id": "ds003768",
+  "pipeline_stage": "validated",
   "title": "Simultaneous EEG and fMRI signals during sleep from humans",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Yameng Gu": {},
     "Feng Han": {},
@@ -13,37 +13,96 @@
     "Jeff H. Duyn": {},
     "Xiao Liu": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003768.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003768",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003768",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.4.1",
-  "recording_modality": [
-    "anat",
-    "eeg",
-    "func"
-  ],
-  "datatypes": [
-    "anat",
-    "eeg",
-    "func"
   ],
   "funding_references": [
     {
-      "funder_name": "National Institutes of Health Pathway to Independence Award K99/R00 (5R00NS092996-03)"
+      "funder_name": "National Institutes of Health",
+      "award_number": "5R00NS092996-03",
+      "award_title": "Pathway to Independence Award K99/R00"
     },
     {
-      "funder_name": "Brain Initiative Award (1RF1MH123247-01)"
+      "funder_name": "National Institutes of Health",
+      "award_number": "1RF1MH123247-01",
+      "award_title": "Brain Initiative Award"
     },
     {
-      "funder_name": "National Institutes of Health R01 Award (1R01NS113889-01A1)"
+      "funder_name": "National Institutes of Health",
+      "award_number": "1R01NS113889-01A1",
+      "award_title": "R01 Award"
     }
   ],
-  "acknowledgements": "We would like to express special thanks to Dr. Thomas Beck and Dr. Josef Pfeuffer, Siemens AG, Healthcare Sector for providing us with the Advanced fMRI package WIP package. We would also like to thank Jack W. Williams and Youyou Yu for their help during the experiment. Data analysis were conducted using the computing resources provided by the Institute for Computational and Data Sciences at the Pennsylvania State University (https://icds.psu.edu)."
+  "modalities": [
+    "anat",
+    "eeg",
+    "func"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".gitattributes",
+    ".gz",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises simultaneous EEG and fMRI recordings from 33 healthy human participants during sleep and wakefulness, collected at Pennsylvania State University. The study includes resting-state sessions before and after a visual-motor adaptation task, followed by multiple sleep sessions with polysomnographic staging. The synchronized acquisition of high-density EEG (32 channels) and BOLD fMRI signals enables investigation of the neural correlates of sleep-wake transitions and autonomic-neural interactions during sleep.",
+  "methods_description": "EEG data were collected using a 32-channel MR-compatible EEG system (Brain Products, Munich, Germany) synchronized with BOLD fMRI acquisition. Each scanning session included an anatomical scan, two 10-minute resting-state sessions (before and after a visual-motor adaptation task), and multiple 15-minute sleep sessions. Sleep stages were scored for 30-second epochs across all sessions.",
+  "keywords": [
+    {
+      "term": "EEG",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "fMRI",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "Sleep",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
+    },
+    {
+      "term": "simultaneous EEG-fMRI",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "arousal",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "resting state",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "polysomnography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
+    },
+    {
+      "term": "sleep staging",
+      "subject_scheme": "MeSH"
+    }
+  ],
+  "source_hash": "d2a56848b0239fce7e732e7c3d9c2c9fc3880d9dc9af459ddc330508d472203d"
 }
