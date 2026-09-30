@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Simultaneous EEG and fMRI signals during sleep from humans",
-  "description": "This dataset comprises simultaneous EEG and fMRI recordings from 33 healthy human participants during sleep and wakefulness. The study includes resting-state sessions before and after a visual-motor adaptation task, followed by multiple sleep sessions with polysomnographic staging. The simultaneous acquisition of high-resolution BOLD imaging and 32-channel EEG enables investigation of the neural and autonomic correlates of sleep-wake transitions and arousal dynamics.",
-  "methods_description": "EEG data were collected using a 32-channel MR-compatible EEG system (Brain Products, Munich, Germany) simultaneously with fMRI acquisition. Each scanning session included an anatomical scan, two 10-minute resting-state sessions (before and after a visual-motor adaptation task), and multiple 15-minute sleep sessions. Sleep stages were scored for 30-second epochs across all sessions. The R128 marker in EEG signals corresponds to BOLD fMRI volume triggers for synchronization.",
+  "description": "This dataset contains simultaneous EEG and BOLD fMRI recordings from 33 healthy participants scanned at Penn State, including resting-state and sleep sessions. EEG was acquired with a 32-channel MR-compatible system, and the data are accompanied by sleep stage scores for each 30-second epoch. It supports investigation of autonomic and neural events during transient arousal changes across sleep.",
+  "methods_description": "Each scanning session comprised an anatomical scan, two 10-minute resting-state runs (before and after a visual-motor adaptation task), and several 15-minute sleep runs. EEG was recorded with a 32-channel Brain Products MR-compatible system, with R128 markers corresponding to fMRI volume triggers. Sleep stages were scored per 30-second epoch.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,35 +28,13 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
     },
     {
-      "term": "simultaneous recording"
+      "term": "simultaneous EEG-fMRI"
     },
     {
       "term": "arousal"
     },
     {
-      "term": "resting-state"
-    },
-    {
-      "term": "polysomnography"
-    },
-    {
-      "term": "sleep stages"
-    },
-    {
-      "term": "visual-motor adaptation"
-    },
-    {
-      "term": "arousal dynamics"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "Magnetic Resonance Imaging",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
+      "term": "resting state"
     }
   ],
   "related_identifiers": [
@@ -66,18 +44,13 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003768",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003768.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
     },
     {
-      "identifier": "10.1101/2021.11.10.468148",
-      "identifier_type": "DOI",
+      "identifier": "https://nemar.org/dataset/on003768",
+      "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
   ],
@@ -88,9 +61,8 @@
       "award_title": "Pathway to Independence Award K99/R00"
     },
     {
-      "funder_name": "National Institutes of Health",
-      "award_number": "1RF1MH123247-01",
-      "award_title": "Brain Initiative Award"
+      "funder_name": "Brain Initiative",
+      "award_number": "1RF1MH123247-01"
     },
     {
       "funder_name": "National Institutes of Health",
@@ -105,7 +77,7 @@
     "func"
   ],
   "sizes": [
-    "92.8 GB (1054 files)"
+    "86.46 GB (1054 files)"
   ],
   "formats": [
     ".eeg",
